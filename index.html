@@ -1,9 +1,83 @@
 <html>
-  <head>
-    <title>Web saya</title>
-  </head>
-  <body>
-    <p>Pusing Gak?</p>
-    <p>perkenalkan saya Ahmad Maghfur</p>
-  </body>
+
+<head>
+  <title>Web Saya</title>
+
+  <style>
+    body {
+      text-align: center;
+    }
+
+    nav>ul {
+      display: flex;
+      justify-content: center;
+    }
+
+    nav>ul>li {
+      list-style: none;
+      min-width: 100px;
+      margin: 8px;
+      padding: 4px;
+      background: black;
+      color: white;
+    }
+
+    nav>ul>li:hover {
+      background: white;
+      border: 1px solid black;
+      color: black;
+      cursor: pointer;
+    }
+
+    .card {
+      border:4px dotted black;
+      margin-bottom:12px;
+    }
+
+    #daftarKomentar {
+      text-align:left;
+    }
+    #daftarKomentar>li> span {
+      font-weight:700;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Jaisy CV</h1>
+
+  <nav>
+    <ul>
+      <li>Tentang</li>
+      <li>Form</li>
+      <li>Komentar</li>
+    </ul>
+  </nav>
+
+  <div class="card">
+    <h2>Tentang</h2>
+    <img src="https://picsum.photos/200" />
+    <p>Saya adalah seorang web developer</p>
+  </div>
+
+  <div class="card">
+    <h2>Kirim Komentar</h2>
+
+    <form>
+      <input type="text" placeholder="Nama kamu"/>
+      <textarea placeholder="Komentar kamu"></textarea>
+      <button>Kirim</button>
+    </form>
+  </div>
+
+  <div class="card">
+    <h2>Komentar Kamu</h2>
+    <ul id="daftarKomentar">
+      <li><span>Denis</span> : Halo ssemuanya</li>
+    </ul>
+  </div>
+
+
+</body>
+
 </html>
